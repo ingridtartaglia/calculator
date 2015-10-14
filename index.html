@@ -1,0 +1,60 @@
+<html ng-app="calculator" ng-cloak>
+<head>
+    <title>#12 - Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-controller="calculatorCtrl">
+    <div class="container">
+        <div class="row">
+            <div class="calculator text-center col-xs-12 col-lg-4 col-sm-6">
+                <div class="calculator-screen-ph">
+                    <input type="number" class="calculator-screen form-control">
+                </div>
+                <div class="row">
+                    <div class="calculator-keys">
+                        <span class="col-xs-3 border-key">+</span>
+                        <span class="col-xs-3 border-key">-</span>
+                        <span class="col-xs-3 border-key">*</span>
+                        <span class="col-xs-3">/</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="calculator-keys">
+                        <span class="col-xs-4 border-key">7</span>
+                        <span class="col-xs-4 border-key">8</span>
+                        <span class="col-xs-4">9</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="calculator-keys">
+                        <span class="col-xs-4 border-key">4</span>
+                        <span class="col-xs-4 border-key">5</span>
+                        <span class="col-xs-4">6</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="calculator-keys">
+                        <span class="col-xs-4 border-key">1</span>
+                        <span class="col-xs-4 border-key">2</span>
+                        <span class="col-xs-4">3</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="calculator-keys">
+                        <span class="col-xs-4 border-key">0</span>
+                        <span class="col-xs-4 border-key">.</span>
+                        <span class="col-xs-4">=</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

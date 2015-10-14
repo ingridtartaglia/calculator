@@ -1,0 +1,24 @@
+body {
+    padding: 3em 2em;
+}
+@media screen and (max-width: 768px){
+    body {
+        padding: 2em 4em;
+    }
+}
+
+.calculator {
+    border: 1px solid black;
+}
+
+.calculator-screen-ph, span {
+    padding: 1em;
+}
+
+.calculator-keys {
+    border-top: 1px solid black;
+}
+
+.border-key {
+    border-right: 1px solid black;
+}
