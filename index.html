@@ -2,6 +2,7 @@
 <head>
     <title>#12 - Calculator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -9,43 +10,80 @@
     <div class="container">
         <div class="row">
             <div class="calculator text-center col-xs-12 col-lg-4 col-sm-6">
-                <div class="calculator-screen-ph">
-                    <input type="number" class="calculator-screen form-control">
-                </div>
                 <div class="row">
-                    <div class="calculator-keys">
-                        <span class="col-xs-3 border-key">+</span>
-                        <span class="col-xs-3 border-key">-</span>
-                        <span class="col-xs-3 border-key">*</span>
-                        <span class="col-xs-3">/</span>
+                    <div class="calculator-name">
+                        <h4>My Calculator</h4>
+                    </div>
+                    <div class="calculator-screen-ph">
+                        <input type="number" class="calculator-screen form-control" ng-model="result">
                     </div>
                 </div>
                 <div class="row">
                     <div class="calculator-keys">
-                        <span class="col-xs-4 border-key">7</span>
-                        <span class="col-xs-4 border-key">8</span>
-                        <span class="col-xs-4">9</span>
+                        <span class="col-xs-6 border-key darker">
+                            <button class="btn btn-default" ng-click="clearNumber()">AC</button>
+                        </span>
+                        <span class="col-xs-6 last-key darker">
+                            <button class="btn btn-default" ng-click="equal()">=</button>
+                        </span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="calculator-keys">
-                        <span class="col-xs-4 border-key">4</span>
-                        <span class="col-xs-4 border-key">5</span>
-                        <span class="col-xs-4">6</span>
+                        <span class="col-xs-3 border-key">
+                            <button class="btn btn-default" ng-click="clickNumber(7)">7</button>
+                        </span>
+                        <span class="col-xs-3 border-key">
+                            <button class="btn btn-default" ng-click="clickNumber(8)">8</button>
+                        </span>
+                        <span class="col-xs-3 border-key">
+                            <button class="btn btn-default" ng-click="clickNumber(9)">9</button>
+                        </span>
+                        <span class="col-xs-3 last-key darker">
+                            <button class="btn btn-default" ng-click="divide()">/</button>
+                        </span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="calculator-keys">
-                        <span class="col-xs-4 border-key">1</span>
-                        <span class="col-xs-4 border-key">2</span>
-                        <span class="col-xs-4">3</span>
+                        <span class="col-xs-3 border-key">
+                            <button class="btn btn-default" ng-click="clickNumber(4)">4</button>
+                        </span>
+                        <span class="col-xs-3 border-key">
+                            <button class="btn btn-default" ng-click="clickNumber(5)">5</button>
+                        </span>
+                        <span class="col-xs-3 border-key">
+                            <button class="btn btn-default" ng-click="clickNumber(6)">6</button>
+                        </span>
+                        <span class="col-xs-3 last-key darker">
+                            <button class="btn btn-default" ng-click="multiply()">*</button>
+                        </span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="calculator-keys">
-                        <span class="col-xs-4 border-key">0</span>
-                        <span class="col-xs-4 border-key">.</span>
-                        <span class="col-xs-4">=</span>
+                        <span class="col-xs-3 border-key">
+                            <button class="btn btn-default" ng-click="clickNumber(1)">1</button>
+                        </span>
+                        <span class="col-xs-3 border-key">
+                            <button class="btn btn-default" ng-click="clickNumber(2)">2</button>
+                        </span>
+                        <span class="col-xs-3 border-key">
+                            <button class="btn btn-default" ng-click="clickNumber(3)">3</button>
+                        </span>
+                        <span class="col-xs-3 last-key darker">
+                            <button class="btn btn-default" ng-click="subtract()">-</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="calculator-keys">
+                        <span class="col-xs-9 border-key">
+                            <button class="btn btn-default" ng-click="clickNumber(0)">0</button>
+                        </span>
+                        <span class="col-xs-3 last-key darker">
+                            <button class="btn btn-default" ng-click="add()">+</button>
+                        </span>
                     </div>
                 </div>
             </div>
