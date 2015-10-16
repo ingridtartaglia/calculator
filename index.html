@@ -15,7 +15,7 @@
                         <h4>My Calculator</h4>
                     </div>
                     <div class="calculator-screen-ph">
-                        <input type="number" class="calculator-screen form-control" ng-model="result">
+                        <input type="text" class="calculator-screen form-control" ng-model="result">
                     </div>
                 </div>
                 <div class="row">
@@ -24,7 +24,7 @@
                             <button class="btn btn-default" ng-click="clearNumber()">AC</button>
                         </span>
                         <span class="col-xs-6 last-key darker">
-                            <button class="btn btn-default" ng-click="equal()">=</button>
+                            <button class="btn btn-default" ng-click="operation()">=</button>
                         </span>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                             <button class="btn btn-default" ng-click="clickNumber(9)">9</button>
                         </span>
                         <span class="col-xs-3 last-key darker">
-                            <button class="btn btn-default" ng-click="divide()">/</button>
+                            <button class="btn btn-default" ng-click="$scope.operation()">/</button>
                         </span>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                             <button class="btn btn-default" ng-click="clickNumber(6)">6</button>
                         </span>
                         <span class="col-xs-3 last-key darker">
-                            <button class="btn btn-default" ng-click="multiply()">*</button>
+                            <button class="btn btn-default" ng-click="operation()">*</button>
                         </span>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                             <button class="btn btn-default" ng-click="clickNumber(3)">3</button>
                         </span>
                         <span class="col-xs-3 last-key darker">
-                            <button class="btn btn-default" ng-click="subtract()">-</button>
+                            <button class="btn btn-default" ng-click="opertation()">-</button>
                         </span>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                             <button class="btn btn-default" ng-click="clickNumber(0)">0</button>
                         </span>
                         <span class="col-xs-3 last-key darker">
-                            <button class="btn btn-default" ng-click="add()">+</button>
+                            <button class="btn btn-default" ng-click="operation()">+</button>
                         </span>
                     </div>
                 </div>
