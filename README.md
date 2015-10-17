@@ -3,5 +3,5 @@
 Technologies used:
 - HTML
 - CSS
-- JavaScript (AngularJS, Lodash)
+- JavaScript (AngularJS)
 - Bootstrap
